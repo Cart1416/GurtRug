@@ -1,0 +1,39 @@
+<head>
+    <title>GurtRug</title>
+    <script src="coin.lua" />
+    <script src="topbar.lua" />
+    <style>
+        body {
+            bg-[#000000] text-white font-sans w-full flex flex-col
+        }
+        button {
+            bg-[#131516] text-white px-4 py-2 rounded hover:bg-[#1e2122] transition
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar" style="w-full h-[64px] max-h-[64px]">
+        <img src="https://ahf2139.pythonanywhere.com/images/rugplay.png" style="w-16 h-16">
+        <div style="text-xl font-bold pl-[70px] pt-[8px]">GurtRug</div>
+        
+        <div style="ml-auto flex gap-2 pl-[200px] pt-[14px]">
+            <button id="homebutton">Home</button>
+            <button id="signoutbutton">Sign out</button>
+            <button id="dailymoneybutton">Claim daily money</button>
+            <button id="createcoinbutton">Create a coin</button>
+            <div id="moneycount">Wallet: loading</div>
+        </div>
+    </div>
+    <br>
+    <div style="w-full"><h1 id="welcometext">Coin: loading</h1></div>
+    <br>
+    <div id="notification" style="self-center"></div>
+    <br>
+    <div id="buyandsell" style="flex flex-col pl-[800px]">
+        <input id="buyamount" type="text" placeholder="Buy Amount (coin)" required="true" style="w-[200px]" />
+        <button id="buybutton">Buy</button>
+        <input id="sellamount" type="text" placeholder="Sell Amount (coin)" required="true" style="w-[200px]" />
+        <button id="sellbutton">Sell</button>
+    </div>
+</body>

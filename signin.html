@@ -1,0 +1,39 @@
+<head>
+    <title>GurtRug - Sign in</title>
+    <script src="signin.lua" />
+    <style>
+        body {
+            bg-[#000000] text-white font-sans
+        }
+        button {
+            bg-[#131516] text-white px-4 py-2 rounded hover:bg-[#1e2122] transition
+        }
+        input {
+			w-full p-3 border border-gray-600 rounded-md bg-[#374151] text-white mb-4 placeholder:text-[#999999] outline-none active:border-red-500
+		}
+    </style>
+</head>
+
+<body>
+    <div id="content" style="bg-[#000001] ">
+        <div style=" p-8 max-w-md mx-auto my-auto flex flex-col  ">
+            <div id="notification" style="self-center"></div>
+            <div style="self-center"><h1 id="welcometext">GurtRug Sign in</h1></div>
+            <br>
+            <form id="signup-form" style="mx-auto">
+                <input id="username" type="text" placeholder="Username" required="true" style="w-full" />
+                <input id="password" type="password" placeholder="Password" required="true" style="w-full" />
+                <button type="submit" id="submit" style="font-medium p-3 rounded-lg w-full">Sign in</button>
+                <button type="submit" id="submit2" style="font-medium p-3 rounded-lg w-full">Sign up</button>
+                <br>
+                <div style="text-center mt-4 text-[#999999] text-sm pt-[0px]">By signing in or signing up, you agree to the TOS and Privacy Policy.</div>
+                <br>
+                <div style="text-center mt-4 text-[#999999] text-sm pt-[60px]">TOS: You are responsible for keeping your account secure. You may not share accounts or use someone elses account without permission. No cheating, using alt accounts to gain unfair advantage, exploiting bugs, or using bots/automation. No hacking, tampering with the server or disrubting exploits. We reserve the right to modify or delete accounts, content, or features as needed.</div>
+                <br>
+                <div style="text-center mt-4 text-[#999999] text-sm pt-[280px]">Privacy Policy: We only collect data necessary for the game to function, such as: username and hashed password, any coins you create or invest in</div>
+                <br>
+                <div style="text-center mt-4 text-[#999999] text-sm pt-[380apx]">Made by Cart1416 (car69 on discord)</div>
+            </form>
+        </div>
+    </div>
+</body>
